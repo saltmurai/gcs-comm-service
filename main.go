@@ -24,8 +24,9 @@ type UploadResponse struct {
 type Mission struct {
 	ID          int                    `json:"id"`
 	Name        string                 `json:"name"`
+	NumberOfSeq int                    `json:"number_sequence_items"`
 	Description string                 `json:"description"`
-	Sequence    map[string]interface{} `json:"seq"`
+	Sequence    map[string]interface{} `json:"sequences"`
 }
 
 func main() {
